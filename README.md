@@ -2,18 +2,6 @@
 
 > Repository of API tests for pokeAPI.
 
----
-<!-- ## Table of Contents
-
-- [API Test](#api-test)
-    - [Clone](#clone)
-  - [Prerequisite](#prerequisite)
-  - [Installation](#installation)
-    - [Run test](#run-test)
-  - [Support](#support)
-  - [License](#license)
---- -->
-
 ### Clone
 - Clone this repo to your local machine using `https://github.com/WELDISSON/pokeAPI.git`
 
