@@ -51,7 +51,31 @@ encounter_condition_schemaS = () => {
 
   return schema;
 }
+condition_value_schemaS = () => {
+  let schema = Joi.object().keys({
+    'condition': Joi.object().keys({
+      'name': Joi.string(),
+      'url': Joi.string()
+    }),
+    'id': Joi.number(),
+    'name': Joi.string(),
+    'names': Joi.array().items(
+      Joi.object().keys({
+        'length': Joi.number()
+      }),
+      Joi.object().keys({
+        'name': Joi.string(),
+        'language': Joi.object().keys({
+          'name': Joi.string(),
+          'url': Joi.string()
+        })
+      })
+    )
+  });
 
+  return schema;
+
+}
 module.exports = {
-  encounters_id_schemaS, encounter_condition_schemaS
+  encounters_id_schemaS, encounter_condition_schemaS, condition_value_schemaS
 }

@@ -54,6 +54,24 @@ describe('Testing API PokeAPI Enconters - GET', () => {
             done();
          });
    });
+
+   it('GET - /api/v2/encounter-condition-value/{id} - 200', done => {
+      request('https://pokeapi.co')
+         .get('/api/v2/encounter-condition-value/1')
+         .expect('content-type', 'application/json; charset=utf-8')
+         .expect(200)
+         .end((err, res) => {
+            if (err) return done(err);
+            let actual = res.body;
+            err = Joi.validate(actual, encounter_schema.condition_value_schemaS(), { abortEarly: false }).error
+
+            assert.equal(err, null);
+            assert.equal(actual.id, 1);
+            assert.equal(actual.name, "swarm-yes");
+
+            done();
+         });
+   });
 });
 
 
