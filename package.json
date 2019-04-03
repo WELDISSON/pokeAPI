@@ -2,7 +2,7 @@
   "name": "pokeapi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "mocha -R spec test/endpoints/*.js"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/WELDISSON/pokeAPI.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/WELDISSON/pokeAPI/issues"
   },
