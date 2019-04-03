@@ -6,10 +6,10 @@ schemaS = () => {
     'next': Joi.string().allow(null),
     'previous': Joi.boolean().allow(null),
     'results': Joi.array().items(
-        Joi.object().keys({
-            'name': Joi.string(),
-            'url': Joi.string()
-        })
+      Joi.object().keys({
+        'name': Joi.string(),
+        'url': Joi.string()
+      })
     )
   });
   return schema;
@@ -27,12 +27,12 @@ berry_id_schemaS = () => {
       }),
       Joi.object().keys({
         'flavor': Joi.object().keys({
-          'name':Joi.string(),
+          'name': Joi.string(),
           'url': Joi.string()
         }),
         'potency': Joi.number()
       })
-      ),
+    ),
     'growth_time': Joi.number(),
     'id': Joi.number(),
     'item': Joi.object().keys({
@@ -55,7 +55,7 @@ berry_id_schemaS = () => {
 }
 
 berry_firmness_id_schemaS = () => {
-  schema = Joi.object().keys({
+  let schema = Joi.object().keys({
     'berries': Joi.array().items(
       Joi.object().keys({
         'length': Joi.number()
@@ -67,7 +67,7 @@ berry_firmness_id_schemaS = () => {
     ),
     'id': Joi.number(),
     'name': Joi.string(),
-    'names': Joi. array().items(
+    'names': Joi.array().items(
       Joi.object().keys({
         'length': Joi.number()
       }),
@@ -85,5 +85,5 @@ berry_firmness_id_schemaS = () => {
 }
 
 module.exports = {
-    schemaS, berry_id_schemaS, berry_firmness_id_schemaS
+  schemaS, berry_id_schemaS, berry_firmness_id_schemaS
 }

@@ -56,5 +56,5 @@ schemaS = () => {
 }
 
 module.exports = {
-    schemaS
+  schemaS
 }
