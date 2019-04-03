@@ -1,4 +1,4 @@
-# API Test
+# PokeAPI [![Build Status](https://travis-ci.com/WELDISSON/pokeAPI.svg?token=sdaES7SE7yzsYKa81Lva&branch=master)](https://travis-ci.com/WELDISSON/pokeAPI)
 
 > Repository of API tests for pokeAPI.
 
