@@ -1,0 +1,25 @@
+{
+  "name": "pokeapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "mocha -R spec test/endpoints/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WELDISSON/pokeAPI.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WELDISSON/pokeAPI/issues"
+  },
+  "homepage": "https://github.com/WELDISSON/pokeAPI#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "joi": "^14.3.1",
+    "mocha": "^6.0.2",
+    "supertest": "^4.0.2"
+  }
+}
